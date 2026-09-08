@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-CMD [ "python", "reservaU.py"]
+CMD [ "python", "simulacion.py"]
