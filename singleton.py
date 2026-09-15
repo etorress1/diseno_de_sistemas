@@ -3,14 +3,13 @@ class GestorDeConfiguracion:
 
     def __init__(self):
         self.modo_mantenimiento = False
-        GestorDeConfiguracion._objeto = self
 
-        @staticmethod
-        def obtener_objeto():
-            if GestorDeConfiguracion._objeto is None:
-                GestorDeConfiguracion()
-                
-                return GestorDeConfiguracion._objeto
+    @staticmethod
+    def obtener_objeto():
+        if GestorDeConfiguracion._objeto is None:
+            GestorDeConfiguracion._objeto = GestorDeConfiguracion()
+
+        return GestorDeConfiguracion._objeto
 
 
     def reserva_permitida(gestor):
