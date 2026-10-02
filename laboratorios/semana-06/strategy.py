@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
 
 #class Descuento(cantidad):
-   # pass
+   #def sin_descuento
+
 
 class EstrategiaDescuento(ABC):
     @abstractmethod
